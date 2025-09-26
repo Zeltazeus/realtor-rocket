@@ -27,7 +27,6 @@ services:
   - type: web
     name: realtor-rocket-frontend
     env: static
-    plan: free
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
     envVars:
