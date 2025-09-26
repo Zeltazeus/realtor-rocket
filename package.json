@@ -6,9 +6,11 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "start": "node server/server.js",
     "start:server": "node server/server.js",
     "lint": "eslint . --ext ts,tsx,js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postinstall": "npx prisma generate"
   },
   "dependencies": {
     "@fontsource-variable/outfit": "^5.0.8",
